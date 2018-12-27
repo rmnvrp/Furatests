@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <Company>Fura</Company>
+    <Authors>Kibnet</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Microservices\Mobile\**" />
+    <Compile Remove="WebBack\**" />
+    <EmbeddedResource Remove="Microservices\Mobile\**" />
+    <EmbeddedResource Remove="WebBack\**" />
+    <None Remove="Microservices\Mobile\**" />
+    <None Remove="WebBack\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="MobileBack\Contract\Auth.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fura.Core" Version="3.5.1" />
+    <PackageReference Include="Fura.Interface" Version="3.5.0" />
+    <PackageReference Include="Fura.Logs" Version="2.4.0" />
+    <PackageReference Include="FuraAuth.ServiceModel" Version="1.0.0.27-master" />
+    <PackageReference Include="FuraBack.ServiceModel" Version="2.5.11.205-Testedforceupdate" />
+    <PackageReference Include="FuraErp.ServiceModel" Version="1.0.0.25-master" />
+    <PackageReference Include="FuraExpedition.ServiceModel" Version="1.0.0.15-master" />
+    <PackageReference Include="FuraPersonalPrompts.ServiceModel" Version="1.0.0.9-master" />
+    <PackageReference Include="FuraWebBack.ServiceModel" Version="1.0.0.108-fixseconddriverrequest" />
+    <PackageReference Include="MailKit" Version="2.0.6" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+  </ItemGroup>
+</Project>

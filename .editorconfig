@@ -1,0 +1,8 @@
+# Fura's editor config
+root = true
+
+# Code files
+[*.cs,*.csx,*.js,*.json]
+indent_style = space
+indent_size = 4
+
